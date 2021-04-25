@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    
+}
+
+/* ---------------- ----------header------------------------- */
+header{
+    width: 100%;
+}
+.header-main{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* --------------------------BANNER --------------------------*/
+.banner{
+    width: 100%;
+    background-color: #29b363;
+    padding: 50px 0;
+}
+
+.banner-text{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #29b363;
+    width: 100%;
+    color: white;
+}
+h1 {
+    letter-spacing: 2px;
+}
+
+/* ------------------------MAIN CONTENT ---------------------------- */
+.content{
+    background-color: #eeeeee;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.main-content > .text-center {
+    width: 70%;
+    margin: 0 auto;
+}
+hr{
+    width: 60%;
+    margin: 10px auto;
+}
+
+ul.list-btn{
+    list-style: none;
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 0;
+}
+.list-btn li {
+    display: inline-block;
+    padding:  10px;
+}
+input {
+    width: 200px;
+    padding: 8px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+}
+
+.funny-btn > input{
+    background-color: #2c7edb;
+    
+}
+.not-fun > input{
+    background-color: #29b363;
+}
+/* -------------------FOOTER ----------------*/
+.desc-company {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 45px;
+    color: #7a7a7a;
+}
+
+.desc-company > p {
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    
+    .header-main{
+        width: 95%;
+    }
+    a > img {
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .header-main{
+        /* width: 100%; */
+        position: relative;
+        display: block;
+    }
+    .header-item {
+        display: inline-block;
+    }
+
+    a > img {
+        transform: scale(0.5);
+        margin: 0 -100px;
+    }
+}
